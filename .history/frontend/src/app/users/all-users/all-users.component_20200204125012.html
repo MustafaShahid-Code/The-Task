@@ -1,0 +1,12 @@
+<li class='users' *ngIf=users$ | async as users
+<li *ngIf= 'let user of users'>
+  <h4>
+   FirstName: {{user.FirstName}}
+  </h4>
+  <h5>
+  LastName:{{user.FirstName}} | Age: {{user.FirstName}} | Email: {{user.FirstName}}
+  </h5>
+
+</li>
+
+</ul>

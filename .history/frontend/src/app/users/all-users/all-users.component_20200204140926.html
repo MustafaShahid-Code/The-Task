@@ -1,0 +1,7 @@
+<ul class='users' *ngIf='users$ | async as users'>
+  <li *ngFor="let uu of users">
+    <h4>{{ uu.Email }}</h4>
+    <h5>FistName: {{ uu.FirstName }} | LastName: {{ uu.LastName }} | Age: {{ uu.Age }}</h5>
+    <a [routerLink]='uu._id">View Details</a>
+  </li>
+</ul>
